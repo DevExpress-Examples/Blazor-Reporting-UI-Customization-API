@@ -1,0 +1,6 @@
+﻿@page "/designercsrf"
+
+<DxReportDesigner ReportUrl="SampleReport" Height="850px" Width="100%">
+    <DxReportDesignerRequestOptions ReportDesignerHandlerUri="DesignerCsrf" />
+    <DxReportDesignerCallbacks BeforeRender="ReportingConfigureCsrf.onBeforeRender_configureCsrf" />
+</DxReportDesigner>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="20.1.6.0" Ref="0" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="SampleReport" PageWidth="850" PageHeight="1100" Version="20.1">
+  <Parameters>
+    <Item1 Ref="2" Description="Select Date" ValueInfo="2020-08-04" Name="pDate" Type="#Ref-1">
+      <ExpressionBindings>
+        <Item1 Ref="3" PropertyName="Value" Expression="LocalDateTimeToday()" />
+      </ExpressionBindings>
+    </Item1>
+  </Parameters>
+  <Bands>
+    <Item1 Ref="4" ControlType="DetailBand" Name="Detail" HeightF="146.875" TextAlignment="TopLeft" Padding="0,0,0,0,100">
+      <Controls>
+        <Item1 Ref="5" ControlType="XRLabel" Name="label1" TextFormatString="Selected Date: {0}" Multiline="true" Text="label1" SizeF="630,44.8749924" LocationFloat="10.0000067,89.99999" Font="Times New Roman, 24pt" Padding="2,2,0,0,96">
+          <ExpressionBindings>
+            <Item1 Ref="6" EventName="BeforePrint" PropertyName="Text" Expression="?pDate" />
+          </ExpressionBindings>
+          <StylePriority Ref="7" UseFont="false" />
+        </Item1>
+        <Item2 Ref="8" ControlType="XRLabel" Name="lbText" Text="Sample Report" TextAlignment="MiddleCenter" SizeF="630,79.99999" LocationFloat="10.00001,10.00001" Font="Times New Roman, 48pt" Padding="2,2,0,0,100">
+          <StylePriority Ref="9" UseFont="false" UseTextAlignment="false" />
+        </Item2>
+      </Controls>
+    </Item1>
+    <Item2 Ref="10" ControlType="TopMarginBand" Name="TopMargin" TextAlignment="TopLeft" Padding="0,0,0,0,100" />
+    <Item3 Ref="11" ControlType="BottomMarginBand" Name="BottomMargin" TextAlignment="TopLeft" Padding="0,0,0,0,100" />
+  </Bands>
+  <ObjectStorage>
+    <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v20.1" Ref="1" Content="System.DateTime" Type="System.Type" />
+  </ObjectStorage>
+</XtraReportsLayoutSerializer>

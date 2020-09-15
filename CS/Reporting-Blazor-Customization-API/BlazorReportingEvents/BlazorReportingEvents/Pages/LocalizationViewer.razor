@@ -1,0 +1,8 @@
+﻿@page "/localizationviewer"
+
+<h1>Document Viewer - Localization (German)</h1>
+
+<DxDocumentViewer ReportUrl="SampleReport" Height="1000px" Width="100%">
+    @*<DxDocumentViewerClientSideModelSettings IncludeLocalization="false" />*@
+    <DxDocumentViewerCallbacks CustomizeLocalization="ReportingLocalization.onCustomizeLocalization" />
+</DxDocumentViewer>

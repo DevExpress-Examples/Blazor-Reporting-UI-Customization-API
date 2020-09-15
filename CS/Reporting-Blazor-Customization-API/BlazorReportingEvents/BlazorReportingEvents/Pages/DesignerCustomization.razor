@@ -1,0 +1,20 @@
+﻿@page "/designercustomization"
+
+<h1>End-User Report Designer - Customization</h1>
+<ul>
+    <li>Menu button removed</li>
+    <li>Save and New buttons moved into the toolbar</li>
+    <li>New button creates a custom report instead of an empty one</li>
+    <li>Wizard is run automatically on the startup</li>
+    <li>Some report types are removed from the wizard</li>
+</ul>
+
+
+<DxReportDesigner ReportUrl="SampleReport" Height="1000px" Width="100%">
+    <DxReportDesignerCallbacks CustomizeElements="ReportingDesignerCustomization.onCustomizeElements"
+                               CustomizeMenuActions="ReportingDesignerCustomization.onCustomizeMenuActions"
+                               ReportOpened="ReportingDesignerCustomization.onReportOpened"
+                               BeforeRender="ReportingDesignerCustomization.onBeforeRender"
+                               CustomizeWizard="ReportingDesignerCustomization.onCustomizeWizard" 
+                               />
+</DxReportDesigner>

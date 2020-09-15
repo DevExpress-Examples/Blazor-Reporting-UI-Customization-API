@@ -1,0 +1,14 @@
+﻿@page "/viewercustomization"
+
+<h1>Document Viewer - Customization</h1>
+
+<ul>
+    <li>Time part is removed for date parameter</li>
+    <li>Set default Zoom level to "Page Width"</li>
+</ul>
+
+<DxDocumentViewer ReportUrl="SampleReport" Height="1000px" Width="100%">
+    <DxDocumentViewerCallbacks BeforeRender="ReportingViewerCustomization.onBeforeRender"
+                               CustomizeParameterEditors="ReportingViewerCustomization.onCustomizeParameterEditors" 
+                               />
+</DxDocumentViewer>

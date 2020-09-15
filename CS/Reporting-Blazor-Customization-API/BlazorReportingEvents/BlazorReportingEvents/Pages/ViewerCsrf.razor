@@ -1,0 +1,6 @@
+﻿@page "/viewercsrf"
+
+<DxDocumentViewer ReportUrl="SampleReport" Height="850px" Width="100%">
+    <DxDocumentViewerRequestOptions InvokeAction="ViewerCsrf" />
+    <DxDocumentViewerCallbacks BeforeRender="ReportingConfigureCsrf.onBeforeRender_configureCsrf" />
+</DxDocumentViewer>
