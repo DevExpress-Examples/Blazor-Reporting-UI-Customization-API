@@ -42,7 +42,7 @@ Assign the client-side function's name to a property in one of the objects menti
 Note that you cannot use named constants in JavaScript functions. Specify strings instead.
 
 ## Example: Localization
-Related pages: [LocalizationViewer.razor](CS/Reporting-Blazor-Customization-API/BlazorReportingEvents/BlazorReportingEvents/Pages/LocalizationViewer.razor) and [LocalizationDesigner.razor](CS/Reporting-Blazor-Customization-API/BlazorReportingEvents/BlazorReportingEvents/Pages/LocalizationDesigner.razor).
+Related pages: [LocalizationViewer.razor](CS/BlazorReportingEvents/BlazorReportingEvents/Pages/LocalizationViewer.razor) and [LocalizationDesigner.razor](CS/BlazorReportingEvents/BlazorReportingEvents/Pages/LocalizationDesigner.razor).
 
 To localize Document Viewer and Report Designer UI, you need the following resources:
 
@@ -52,7 +52,7 @@ To localize Document Viewer and Report Designer UI, you need the following resou
 The *reporting_Localization.js* file contains the **onCustomizeLocalization** function that loads JSON localization files. The files are located in the *wwwroot\js\localization* folder. Razor page markup assigns the function name to the **CustomizeLocalization** property in DxDocumentViewerCallbacks or DxReportDesignerCallbacks. 
 
 ## Example: Anti-Forgery Tokens
-Related pages: [DesignerCsrf.razor](CS/Reporting-Blazor-Customization-API/BlazorReportingEvents/BlazorReportingEvents/Pages/DesignerCsrf.razor) and [ViewerCsrf.razor](CS/Reporting-Blazor-Customization-API/BlazorReportingEvents/BlazorReportingEvents/Pages/ViewerCsrf.razor).
+Related pages: [DesignerCsrf.razor](CS/BlazorReportingEvents/BlazorReportingEvents/Pages/DesignerCsrf.razor) and [ViewerCsrf.razor](CS/BlazorReportingEvents/BlazorReportingEvents/Pages/ViewerCsrf.razor).
 
 To implement anti-forgery tokens that [prevent CSRF attack](https://docs.microsoft.com/en-us/aspnet/web-api/overview/security/preventing-cross-site-request-forgery-csrf-attacks), do the following:
 
@@ -64,12 +64,12 @@ To implement anti-forgery tokens that [prevent CSRF attack](https://docs.microso
 	}
 	```
 - Create custom controllers - [WebDocumentViewerController](https://docs.devexpress.com/XtraReports/DevExpress.AspNetCore.Reporting.WebDocumentViewer.WebDocumentViewerController) and [ReportDesignerController](https://docs.devexpress.com/XtraReports/DevExpress.AspNetCore.Reporting.ReportDesigner.ReportDesignerController) descendants. Apply the **ValidateAntiForgeryToken** and **Route** attributes. The Route attributes in this example use the "ViewerCsrf" or "DesignerCsrf" values, respectively.
-- Use the specified route values - "ViewerCsrf" and "DesignerCsrf" - to initialize the [DxDocumentViewerRequestOptions.InvokeAction](https://docs.devexpress.com/XtraReports/DevExpress.Blazor.Reporting.DxDocumentViewerRequestOptions.InvokeAction) and [DxReportDesignerRequestOptions.InvokeAction](https://docs.devexpress.com/XtraReports/DevExpress.Blazor.Reporting.DxReportDesignerRequestOptions.InvokeAction) properties. Refer to the [DesignerCsrf.razor](CS/Reporting-Blazor-Customization-API/BlazorReportingEvents/BlazorReportingEvents/Pages/DesignerCsrf.razor) and [ViewerCsrf.razor](CS/Reporting-Blazor-Customization-API/BlazorReportingEvents/BlazorReportingEvents/Pages/ViewerCsrf.razor) files for code samples.
-- Handle the reporting component's **BeforeRender** event to add the **RequestVerificationToken** to the request header. Refer to the [reporting_ConfigureCsrf.js](CS/Reporting-Blazor-Customization-API/BlazorReportingEvents/BlazorReportingEvents/wwwroot/js/reporting_ConfigureCsrf.js) file for the code sample.
+- Use the specified route values - "ViewerCsrf" and "DesignerCsrf" - to initialize the [DxDocumentViewerRequestOptions.InvokeAction](https://docs.devexpress.com/XtraReports/DevExpress.Blazor.Reporting.DxDocumentViewerRequestOptions.InvokeAction) and [DxReportDesignerRequestOptions.InvokeAction](https://docs.devexpress.com/XtraReports/DevExpress.Blazor.Reporting.DxReportDesignerRequestOptions.InvokeAction) properties. Refer to the [DesignerCsrf.razor](CS/BlazorReportingEvents/BlazorReportingEvents/Pages/DesignerCsrf.razor) and [ViewerCsrf.razor](CS/BlazorReportingEvents/BlazorReportingEvents/Pages/ViewerCsrf.razor) files for code samples.
+- Handle the reporting component's **BeforeRender** event to add the **RequestVerificationToken** to the request header. Refer to the [reporting_ConfigureCsrf.js](CS/BlazorReportingEvents/BlazorReportingEvents/wwwroot/js/reporting_ConfigureCsrf.js) file for the code sample.
 
 ## Example: Document Viewer UI Customization
-Related pages: [ViewerCustomization.razor](CS/Reporting-Blazor-Customization-API/BlazorReportingEvents/BlazorReportingEvents/Pages/ViewerCustomization.razor).
 
+Related pages: [ViewerCustomization.razor](CS/BlazorReportingEvents/BlazorReportingEvents/Pages/ViewerCustomization.razor).
 The *reporting_ViewerCustomization.js* file contains JavaScript functions that customize the Document Viewer in the following manner:
 
 | Event | Handler Implementation |
@@ -79,7 +79,7 @@ The *reporting_ViewerCustomization.js* file contains JavaScript functions that c
 
 
 ## Example: End-User Report Designer UI Customization
-Related pages: [DesignerCustomization.razor](CS/Reporting-Blazor-Customization-API/BlazorReportingEvents/BlazorReportingEvents/Pages/DesignerCustomization.razor).
+Related pages: [DesignerCustomization.razor](CS/BlazorReportingEvents/BlazorReportingEvents/Pages/DesignerCustomization.razor).
 
 The *reporting_DesignerCustomization.js* file contains JavaScript functions that customize the Report Designer in the following manner:
 
