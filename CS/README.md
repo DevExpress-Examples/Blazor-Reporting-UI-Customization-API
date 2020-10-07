@@ -90,3 +90,4 @@ The *reporting_DesignerCustomization.js* file contains JavaScript functions that
 | **ReportOpened** | Creates a custom report when users press the New button. |
 | **BeforeRender** | Runs the Wizard when the Report Designer starts. |
 | **CustomizeWizard** | Removes certain report types from the Report Wizard. |
+
