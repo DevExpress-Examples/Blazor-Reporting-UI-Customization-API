@@ -51,6 +51,8 @@ To localize Document Viewer and Report Designer UI, you need the following resou
 
 The *reporting_Localization.js* file contains the **onCustomizeLocalization** function that loads JSON localization files. The files are located in the *wwwroot\js\localization* folder. Razor page markup assigns the function name to the **CustomizeLocalization** property in DxDocumentViewerCallbacks or DxReportDesignerCallbacks. 
 
+Note that the component's UI is built on DevExtreme widgets, so to localize the editors you should also use one of the approaches described in the following topic: [DevExtreme - Localization](https://js.devexpress.com/Documentation/Guide/Common/Localization/). Specify web server's thread culture to apply culture-specific formats to numbers and dates.
+
 ## Example: Anti-Forgery Tokens
 Related pages: [DesignerCsrf.razor](CS/BlazorReportingEvents/BlazorReportingEvents/Pages/DesignerCsrf.razor) and [ViewerCsrf.razor](CS/BlazorReportingEvents/BlazorReportingEvents/Pages/ViewerCsrf.razor).
 
