@@ -1,14 +1,9 @@
-<!-- default badges list -->
-![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/295795250/2022.1)
-[![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T931566)
-[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
-<!-- default badges end -->
 # Blazor Reporting (JavaScript-Based) - UI Customization API
 
 This example demonstrates how to use client-side Blazor Reporting API to customize the Document Viewer and End-User Report Designer components.
 
 ## Overview
-The Document Viewer and Report Designer use the following objects to specify clint-side event handlers:
+The Document Viewer and Report Designer use the following objects to specify client-side event handlers:
 
 * [DxDocumentViewerCallbacks](https://docs.devexpress.com/XtraReports/DevExpress.Blazor.Reporting.DxDocumentViewerCallbacks) 
 * [DxReportDesignerCallbacks](https://docs.devexpress.com/XtraReports/DevExpress.Blazor.Reporting.DxReportDesignerCallbacks)
@@ -48,7 +43,7 @@ Note that you cannot use named constants in JavaScript functions. Specify string
 
 ## Example: Localization
 Related pages: [LocalizationViewer.razor](CS/BlazorReportingEvents/BlazorReportingEvents/Pages/LocalizationViewer.razor) and [LocalizationDesigner.razor](CS/BlazorReportingEvents/BlazorReportingEvents/Pages/LocalizationDesigner.razor).
-
+ho
 To localize Document Viewer and Report Designer UI, you need the following resources:
 
 * **jQuery** library. Add a reference to the _Host.cshtml page.
