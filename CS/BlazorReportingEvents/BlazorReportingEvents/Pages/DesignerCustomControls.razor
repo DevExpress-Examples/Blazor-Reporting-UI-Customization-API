@@ -1,0 +1,16 @@
+﻿@page "/designercustomcontrols"
+
+<h1>End-User Report Designer - Custom Controls</h1>
+<ul>
+    <li>Custom report control `MyControl` added to the toolbox</li>
+    <li>Custom report control `NumericLabel` added to the toolbox</li>
+</ul>
+
+
+<DxReportDesigner ReportName="SampleReport" Height="1000px" Width="100%" CustomControlTypes="@customTypes">
+</DxReportDesigner>
+
+
+@code {
+    List<Type> customTypes = new List<Type> { typeof(MyControl), typeof(NumericLabel) };
+}

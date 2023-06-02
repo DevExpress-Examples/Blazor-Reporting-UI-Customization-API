@@ -1,14 +1,9 @@
-<!-- default badges list -->
-![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/295795250/2022.2)
-[![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T931566)
-[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
-<!-- default badges end -->
 # Blazor Reporting (JavaScript-Based) - UI Customization API
 
 This example demonstrates how to use client-side Blazor Reporting API to customize the Document Viewer and End-User Report Designer components.
 
 ## Overview
-The Document Viewer and Report Designer use the following objects to specify clint-side event handlers:
+The Document Viewer and Report Designer use the following objects to specify client-side event handlers:
 
 * [DxDocumentViewerCallbacks](https://docs.devexpress.com/XtraReports/DevExpress.Blazor.Reporting.DxDocumentViewerCallbacks) 
 * [DxReportDesignerCallbacks](https://docs.devexpress.com/XtraReports/DevExpress.Blazor.Reporting.DxReportDesignerCallbacks)
@@ -47,7 +42,9 @@ Assign the client-side function's name to a property in one of the objects menti
 Note that you cannot use named constants in JavaScript functions. Specify strings instead.
 
 ## Example: Localization
-Related pages: [LocalizationViewer.razor](CS/BlazorReportingEvents/BlazorReportingEvents/Pages/LocalizationViewer.razor) and [LocalizationDesigner.razor](CS/BlazorReportingEvents/BlazorReportingEvents/Pages/LocalizationDesigner.razor).
+Related pages:
+- [LocalizationViewer.razor](CS/BlazorReportingEvents/BlazorReportingEvents/Pages/LocalizationViewer.razor)
+- [LocalizationDesigner.razor](CS/BlazorReportingEvents/BlazorReportingEvents/Pages/LocalizationDesigner.razor)
 
 To localize Document Viewer and Report Designer UI, you need the following resources:
 
@@ -59,7 +56,9 @@ The *reporting_Localization.js* file contains the **onCustomizeLocalization** fu
 Note that the component's UI is built on DevExtreme widgets, so to localize the editors you should also use one of the approaches described in the following topic: [DevExtreme - Localization](https://js.devexpress.com/Documentation/Guide/Common/Localization/). Specify web server's thread culture to apply culture-specific formats to numbers and dates.
 
 ## Example: Anti-Forgery Tokens
-Related pages: [DesignerCsrf.razor](CS/BlazorReportingEvents/BlazorReportingEvents/Pages/DesignerCsrf.razor) and [ViewerCsrf.razor](CS/BlazorReportingEvents/BlazorReportingEvents/Pages/ViewerCsrf.razor).
+Related pages:
+- [DesignerCsrf.razor](CS/BlazorReportingEvents/BlazorReportingEvents/Pages/DesignerCsrf.razor)
+- [ViewerCsrf.razor](CS/BlazorReportingEvents/BlazorReportingEvents/Pages/ViewerCsrf.razor)
 
 To implement anti-forgery tokens that [prevent CSRF attack](https://docs.microsoft.com/en-us/aspnet/web-api/overview/security/preventing-cross-site-request-forgery-csrf-attacks), do the following:
 
@@ -76,7 +75,7 @@ To implement anti-forgery tokens that [prevent CSRF attack](https://docs.microso
 
 ## Example: Document Viewer UI Customization
 
-Related pages: [ViewerCustomization.razor](CS/BlazorReportingEvents/BlazorReportingEvents/Pages/ViewerCustomization.razor).
+Related page: [ViewerCustomization.razor](CS/BlazorReportingEvents/BlazorReportingEvents/Pages/ViewerCustomization.razor).
 The *reporting_ViewerCustomization.js* file contains JavaScript functions that customize the Document Viewer in the following manner:
 
 | Event | Handler Implementation |
@@ -86,7 +85,8 @@ The *reporting_ViewerCustomization.js* file contains JavaScript functions that c
 
 
 ## Example: End-User Report Designer UI Customization
-Related pages: [DesignerCustomization.razor](CS/BlazorReportingEvents/BlazorReportingEvents/Pages/DesignerCustomization.razor).
+
+Related page: [DesignerCustomization.razor](CS/BlazorReportingEvents/BlazorReportingEvents/Pages/DesignerCustomization.razor).
 
 The *reporting_DesignerCustomization.js* file contains JavaScript functions that customize the Report Designer in the following manner:
 
@@ -97,4 +97,12 @@ The *reporting_DesignerCustomization.js* file contains JavaScript functions that
 | **ReportOpened** | Creates a custom report when users press the New button. |
 | **BeforeRender** | Runs the Wizard when the Report Designer starts. |
 | **CustomizeWizard** | Removes certain report types from the Report Wizard. |
+
+## Example: Custom Controls in the Report Designer Toolbox
+
+Related pages: 
+- [DesignerCustomControls.razor](CS/BlazorReportingEvents/BlazorReportingEvents/Pages/DesignerCustomControls.razor)
+- [_Host.cshtml](CS/BlazorReportingEvents/BlazorReportingEvents/Pages/_Host.cshtml)
+- [MyControl.cs](CS/BlazorReportingEvents/BlazorReportingEvents/CustomControls/MyControl.cs)
+- [NumericLabel.cs](CS/BlazorReportingEvents/BlazorReportingEvents/CustomControls/NumericLabel.cs)
 

@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30320.27
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33712.159
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorReportingEvents", "BlazorReportingEvents\BlazorReportingEvents.csproj", "{D1B26D93-BAAC-4C14-A0C7-E62FF449C2A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorReportingEvents", "BlazorReportingEvents\BlazorReportingEvents.csproj", "{D1B26D93-BAAC-4C14-A0C7-E62FF449C2A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
