@@ -24,7 +24,7 @@ window.ReportingViewerCustomization = {
 	    //-1: Page Width
 	    //0: Whole Page
 	    //1: 100%
-	    e.reportPreview.zoom(-1);
+	    e.reportPreview.zoom = -1;
 	}
 }
 ```
@@ -110,4 +110,3 @@ Related pages:
 - [_Host.cshtml](CS/BlazorReportingEvents/BlazorReportingEvents/Pages/_Host.cshtml)
 - [MyControl.cs](CS/BlazorReportingEvents/BlazorReportingEvents/CustomControls/MyControl.cs)
 - [NumericLabel.cs](CS/BlazorReportingEvents/BlazorReportingEvents/CustomControls/NumericLabel.cs)
-
