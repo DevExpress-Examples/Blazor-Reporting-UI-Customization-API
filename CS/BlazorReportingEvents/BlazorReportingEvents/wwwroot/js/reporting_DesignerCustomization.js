@@ -32,8 +32,8 @@
     onReportOpened: function(s, e) {
         if(e.Url === "CustomNewReport") {
             var tab = s.GetCurrentTab();
-            tab.url("");
-            tab.isModified(true);
+            tab.url = "";
+            tab.isModified = true;
         }
     },
 

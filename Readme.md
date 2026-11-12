@@ -100,7 +100,7 @@ The *reporting_DesignerCustomization.js* file contains JavaScript functions that
 |-----------|----------------|
 | **CustomizeElements** | Removes the Menu button |
 | **CustomizeMenuActions** | Moves the Save and New buttons from the Menu to the Toolbar. |
-| **ReportOpened** | Creates a custom report when users press the New button. |
+| **ReportOpened** | Clears the custom report's URL and marks it as modified when users press the New button. |
 | **BeforeRender** | Runs the Wizard when the Report Designer starts. |
 | **CustomizeWizard** | Removes certain report types from the Report Wizard. |
 
